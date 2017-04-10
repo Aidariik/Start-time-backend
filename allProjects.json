@@ -1,0 +1,25 @@
+[
+  { "author": "string",
+    "backersCount": "int",
+    "desc": "string",
+    "id": "0",
+    "image": "string",
+    "name": "string",
+    "pledgeGoal": "int",
+    "startDate": "string",
+    "stopDate": "string",
+    "totalPledged": "int"
+  },
+
+  { "author": "string1",
+    "backersCount": "int",
+    "desc": "string",
+    "id": "1",
+    "image": "string",
+    "name": "string",
+    "pledgeGoal": "int",
+    "startDate": "string",
+    "stopDate": "string",
+    "totalPledged": "int"
+  }
+]

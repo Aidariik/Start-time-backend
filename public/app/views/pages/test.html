@@ -1,0 +1,54 @@
+<div>
+  <div class="col-12-xs" style="position: fixed;top: 52px;left: 0;right: 0; z-index: 500;">
+    <table class="col-12-xs" style="width: 100%; height: 30px;">
+      <tr>
+        <td>
+          <div class="col-6-xs" style="text-align: center;">
+            Поиск документа
+          </div>
+        </td>
+        <td>
+          <div class="col-6-xs" style=" text-align: center;">
+            Загрузка документа
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="col-12-xs" style="margin-left: 3%;margin-right: 3%;z-index: 0; ">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button">Найти!</button>
+      </span>
+      </div>
+    </div>
+    <div class="row">
+      <tags-input ng-model="test.tags">
+      <auto-complete source="loadTags($query)"></auto-complete>
+    </tags-input>
+    <p>Model: {{test.tags}}</p>
+    </div>
+  </div>
+  <div style="margin-top: 120px;">
+    <div class="row">
+    </div>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Метки</th>
+          <th>Превью</th>
+          <th>Смотреть в полном размере</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- LOOP OVER THE USERS -->
+        <tr ng-repeat="user in test.persons">
+          <td>{{ user._id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.username}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="height: 3000px;">{{test.message}} </p>
+</div>

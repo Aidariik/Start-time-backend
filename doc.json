@@ -1,0 +1,29 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc", "closure"]
+    },
+    "source": {
+        "include": ["./ToDo.md","./server.js","public","server"],
+        "includePattern": ".+\\.(js|md)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+     "plugins": ["plugins/markdown"],
+    "markdown": {
+        "tags": ["variable"]
+    },
+
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": false,
+        "useLongnameInNav": false
+    },
+    "opts": {
+        "template": "./node_modules/minami", // same as -t templates/default
+        "encoding": "utf8", // same as -e utf8
+        "destination": "./docs/", // same as -d ./out/
+        "recurse": true // same as -r
+            //"tutorials": "./tutorials"  same as -u path/to/tutorials
+    }
+
+}
