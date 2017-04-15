@@ -1,25 +1,87 @@
 [
-  { "author": "string",
-    "backersCount": "int",
-    "desc": "string",
-    "id": "0",
-    "image": "string",
-    "name": "string",
-    "pledgeGoal": "int",
-    "startDate": "string",
-    "stopDate": "string",
-    "totalPledged": "int"
+  {
+    "author": "Артём Абишев",
+    "backersCount": "1",
+    "desc": "Я строю Lotus 7, небольшой двухместный легендарный спортивный автомобиль с открытым верхом, который сошел с коныеера в 1957 году",
+    "id": "1",
+    "image": "https://start-time.kz/lotus1.jpg",
+    "name": "7 для кольца",
+    "pledgeGoal": "3800000",
+    "startDate": "2017-04-05"  ,
+    "stopDate": "2017-07-06",
+    "totalPledged": "500"
   },
 
-  { "author": "string1",
-    "backersCount": "int",
-    "desc": "string",
-    "id": "1",
-    "image": "string",
-    "name": "string",
-    "pledgeGoal": "int",
-    "startDate": "string",
-    "stopDate": "string",
-    "totalPledged": "int"
+  {
+    "author": "Тимофей Банников",
+    "backersCount": "17",
+    "desc": "Постер о змеях Казахстана для школ, юннатских кружков и всех любителей природы.",
+    "id": "2",
+    "image": "https://start-time.kz/assets/userfiles/tbanniko@gmail.com/images/2.jpg",
+    "name": "Информационный постер Змеи Казахстана",
+    "pledgeGoal": "460000",
+    "startDate": "2017-04-05",
+    "stopDate": "2017-06-05",
+    "totalPledged": "82510"
+  },
+  {
+    "author": "Токенова С.",
+    "backersCount": "2",
+    "desc": "Книга написана в виде сказки, в которой девочка Анника мечтает попасть в Страну Музыки.",
+    "id": "3",
+    "image": "https://start-time.kz/assets/userfiles/mediacast@mediacast.kz/images/%D0%BD%D0%BE%D1%82%D1%8B.jpg",
+    "name": "Музыкальное пособие по фортепиано",
+    "pledgeGoal": "65000",
+    "startDate": "2017-03-14",
+    "stopDate": "2018-01-01",
+    "totalPledged": "20000"
+  },
+  {
+    "author": "MEDIACAST_HELP",
+    "backersCount": "9",
+    "desc": "Постер о змеях Казахстана для школ, юннатских кружков и всех любителей природы.",
+    "id": "4",
+    "image": "https://start-time.kz/assets/userfiles/mediacast@mediacast.kz/images/V-Den-Pobedy-po-CHerkessku-proydut-paradom-Malchishi-Kibalchishi.jpg",
+    "name": "Патронаж ветеранов. Помним Весь Год!",
+    "pledgeGoal": "200000",
+    "startDate": "2017-04-10",
+    "stopDate": "2017-05-01",
+    "totalPledged": "73500"
+  },
+  {
+    "author": "Валитова Рената",
+    "backersCount": "3",
+    "desc": "Алматы Марафон – это ежегодное международное беговое соревнование.",
+    "id": "5",
+    "image": "https://start-time.kz/assets/userfiles/renata.v@almaty-marathon.kz/images/%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C.jpg",
+    "name": "Благотворительный Алматы Марафон- смелость быть первым!",
+    "pledgeGoal": "3000000",
+    "startDate": "2017-03-02",
+    "stopDate": "2017-04-17",
+    "totalPledged": "1514200"
+  },
+  {
+    "author": "Жанна Коптлеуова",
+    "backersCount": "6",
+    "desc": "Бесплатная одежда и обувь для нуждающихся семей.",
+    "id": "6",
+    "image": "https://start-time.kz/assets/cache_image/assets/userfiles/aziza_reklama@mail.ru/files/pic14859481815-min_191x133_228.png",
+    "name": "Магазин Добрых Дел",
+    "pledgeGoal": "100000",
+    "startDate": "2017-02-01",
+    "stopDate": "2017-04-30",
+    "totalPledged": "62505"
+  },
+  {
+    "author": "Ломиковская Наталья",
+    "backersCount": "3",
+    "desc": "Путешествие Алматы-Верный-Алматы - красочный маршрут об истории южной столицы",
+    "id": "7",
+    "image": "https://start-time.kz/assets/userfiles/natataliy@mail.ru/images/%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81.jpg",
+    "name": "Путешествие Алматы-Верный-Алматы",
+    "pledgeGoal": "1000000",
+    "startDate": "2017-01-25",
+    "stopDate": "2017-04-25",
+    "totalPledged": "442500"
   }
 ]
