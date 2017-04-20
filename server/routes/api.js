@@ -6,6 +6,8 @@ var fs = require('fs');
 var path = require('path');
 var allProjects = [];
     allProjects = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'allProjects.json'), 'utf8'));
+var allCampaigns = [];
+allCampaigns = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'AllCampaigns.json'), 'utf8'));
 //super secret for creating token
 //var superSecret = config.secret;
 
@@ -63,7 +65,6 @@ module.exports = function (app, express) {
             console.log(allProjects);
             res.send(allProjects);
         });
-
 //=====================================  /me  ==================================
     apiRouter.route('/me')
         .get(function (req, res) {
@@ -72,23 +73,18 @@ module.exports = function (app, express) {
         });
 
 //===============================  /users/:user_id  ============================
-    apiRouter.route('/allProjects/:project_id')
-    //get the user with that id
-    //(accessed at GET http://localhost:8080/api/users/:user_id)
+    apiRouter.route('/Campaign/:project_id')
         .get(function (req, res) {
-            console.log(allProjects);
-            for (var i=0; i<allProjects.length;i ++) {
-                var project = allProjects[i];
-                console.log(project);
-                if (project.id == req.params.project_id) res.json(project);
-            }
 
-            /*
-            User.findById(req.params.user_id, function (err, user) {
-                if (err) res.send(err);
-                //return that user
-                res.json(user);
-            })*/
+            console.log(req.params.project_id);
+            for (var i=0; i<allCampaigns.length;i++) {
+                var campaign = allCampaigns[i];
+                console.log(campaign);
+                if (campaign.ProjectID == req.params.project_id) {
+                    console.log(campaign);
+                    res.send(campaign);
+                }
+            }
         });
         //update the user with this id
         //(accessed at PUT http://localhost:8080/api/users/:user_id)
@@ -99,7 +95,7 @@ module.exports = function (app, express) {
                 if (err) res.send(err);
                 //update the users info only if its new
                 if (req.body.name) user.name = req.body.name;
-                if (req.body.username) user.username = req.body.username;
+                if (req.body.username) userx.username = req.body.username;
                 if (req.body.password) user.password = req.body.password;
                 //save the user
                 var self = this;
